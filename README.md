@@ -22,10 +22,9 @@ Currently studying Mechatronics at THWS, passionate about creating innovative so
 
 ### 🌱 I'm currently learning
 - Advanced machine learning techniques
-- Cloud integration for IoT systems
-- Industry 4.0 concepts and implementation
+- Deep Reinforcement learning for social navigation of robots.  
 
 ### 📫 How to reach me
-- LinkedIn: [www.linkedin.com/in/prince-sakariya]
+
 
 Feel free to explore my repositories and don't hesitate to reach out for collaborations or discussions on automation, IoT, or mechatronics projects!
