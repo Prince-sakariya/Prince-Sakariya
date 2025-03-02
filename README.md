@@ -5,6 +5,7 @@
 Currently studying Mechatronics at THWS, passionate about creating innovative solutions in automation, IoT, and machine learning.
 
 ### 🛠️ Technologies & Tools
+
 - Arduino, Raspberry Pi, ESP32
 - C/C++, Python, MATLAB
 - PLC Programming (Siemens)
@@ -14,6 +15,7 @@ Currently studying Mechatronics at THWS, passionate about creating innovative so
 - Machine Learning (TensorFlow, Teachable Machines)
 
 ### 🚀 Projects
+
 - **Industrial I/O Modules**: Developed 5-30V I/O modules with custom PCB design
 - **16-Channel PLC**: Implemented on Arduino Uno using OpenPLC
 - **IoT Dashboard**: Created sensor data visualization system with Raspberry Pi, SenseHat, Node-RED, and MQTT
@@ -21,10 +23,10 @@ Currently studying Mechatronics at THWS, passionate about creating innovative so
 - **Automated Conveyor System**: Programmed Siemens PLC for efficient parcel sorting based on color recognition
 
 ### 🌱 I'm currently learning
+
 - Advanced machine learning techniques
-- Deep Reinforcement learning for social navigation of robots.  
+- Deep Reinforcement learning for social navigation of robots.
 
 ### 📫 How to reach me
-
 
 Feel free to explore my repositories and don't hesitate to reach out for collaborations or discussions on automation, IoT, or mechatronics projects!
