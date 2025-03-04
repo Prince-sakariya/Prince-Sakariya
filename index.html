@@ -4,7 +4,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
 	<head>
 		<title>Portfolio: Prince Sakariya</title>
 		<meta charset="utf-8" />
@@ -43,42 +42,61 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li> -->
-								<li><a href="left-sidebar.html">Education</a></li>
-								<li><a href="right-sidebar.html">Experience</a></li>
-								<li><a href="no-sidebar.html">About</a></li>
+								<li>
+									<a href="education.html">
+										Education
+									</a>
+								</li>
+								<li>
+									<a href="experience.html">
+										Experience
+									</a>
+								</li>
+								<li>
+									<a href="about.html">
+										About
+									</a>
+								</li>
 							</ul>
 						</nav>
 
 					<!-- Banner -->
 						<section id="banner">
 							<header>
-								<h2>Howdy! My name is Prince Sakariya.</h2>
-                                <h2> I 
-                                    <!-- Element to contain animated typing -->
-                                    <span id="element"></span>
-
-                                    <!-- Load library from the CDN -->
-                                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-                                    <!-- Setup and start animation! -->
-                                    <script>
-                                        var typed = new Typed('#element', {
-                                        strings: ['am a Mechatronics Engineer.', 
-                                        'work on Braking Systems @Bosch.',
-                                        'am enthusiastic about robotics.', 
-                                        'explore Deep RL algorithms.'],
-                                        typeSpeed: 20,
-                                        });
-                                    </script>
-                                    </body>
-                                </h2>
-								<!-- <p>I flex my Mechatronics muscle at Bosch, where I built a desktop app to tame 
-                                    braking system impedance—making cars safer one line of code at a time. </p>
-									
-                                    <p>	Now, I’m elbow-deep in my thesis, using deep reinforcement learning 
-                                        and ROS to train robots that don’t just dodge walls but groove around humans 
-                                        like natural dance partners. I’m all about systems that work *with* us, 
-                                        not against us—whether it’s on the road or in the room.</p> -->
+								<div class="header-content">
+										<div>
+												<h2>Howdy! My name is Prince Sakariya.</h2>
+												<h2> I 
+													<!-- Element to contain animated typing -->
+													<span id="element"></span>
+				
+													<!-- Load library from the CDN -->
+													<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+				
+													<!-- Setup and start animation! -->
+													<script>
+														var typed = new Typed('#element', {
+														strings: ['work on Braking Systems @Bosch.', 
+														'am enthusiastic about robotics.',                                         
+														'explore Deep RL algorithms.',
+														'am a Mechatronics Engineer.'],
+														typeSpeed: 20,
+														});
+													</script>
+													</body>
+												</h2>
+												<p>I flex my Mechatronics muscle at Bosch, where I built a desktop app to tame 
+													braking system impedance—making cars safer one line of code at a time. </p>
+													
+												<!-- <p>	Now, I’m elbow-deep in my thesis, using deep reinforcement learning 
+													and ROS to train robots that don’t just dodge walls but groove around humans 
+													like natural dance partners. I’m all about systems that work *with* us, 
+													not against us—whether it’s on the road or in the room.</p> -->
+											</div>
+											<a class="image display_photo">
+												<img src="images/Photo_of_me.jpeg">
+											</a>
+								</div>
                             </header>
 						</section>
 
@@ -140,7 +158,7 @@
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/esp.gif" width="374px" height="260px"alt="" /></a>
+													<a href="#" class="image featured"><img src="images/esp.gif" alt="" /></a>
 													<header>
 														<h3>Thermal Impedance Analyzer</h3>
 													</header>
@@ -154,7 +172,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/social_navigation.webp" width="374px" height="260px"/></a>
+													<a href="#" class="image featured"><img src="images/social_navigation.webp" /></a>
 													<header>
 														<h3>Social navigation of robots</h3>
 													</header>
@@ -168,7 +186,11 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><video width="400" autoplay><source src="images/supervised_learning.mp4 " ></video></a>
+													<a href="#" class="video featured">
+														<video autoplay loop muted>
+															<source src="videos/supervised_learning.mp4 ">
+														</video>
+													</a>
 													<header>
 														<h3>EV Range Prediction</h3>
 													</header>
@@ -182,7 +204,11 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><video width="400" autoplay><source src="images/MiniPLC.mp4"></video></a>
+													<a href="#" class="video featured">
+														<video autoplay loop muted>
+															<source src="videos/MiniPLC.mp4">
+														</video>
+													</a>
 													<header>
 														<h3>Mini-PLC</h3>
 													</header>
@@ -196,11 +222,15 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<a href="#" class="video featured">
+														<video autoplay loop muted>
+															<source src="videos/Transportmodell.mp4">
+														</video>
+													</a>
 													<header>
-														<h3>Signal Processing</h3>
+														<h3>Package Sorting Siemens PLC</h3>
 													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+													<p>Programmed a Siemens S7300 PLC to orchestrate a conveyor belt symphony, automating package sorting with relentless efficiency and mechatronics precision.</p>
 													<footer>
 														<ul class="actions">
 															<li><a href="#" class="button alt">Find out more</a></li>
@@ -279,7 +309,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-8 col-12-medium">
-								<section>
+								<!-- <section>
 									<header>
 										<h2>Blandit nisl adipiscing</h2>
 									</header>
@@ -310,10 +340,10 @@
 											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
 										</li>
 									</ul>
-								</section>
+								</section> -->
 							</div>
 							<div class="col-4 col-12-medium">
-								<section>
+								<!-- <section>
 									<header>
 										<h2>What's this all about?</h2>
 									</header>
@@ -328,7 +358,7 @@
 											<li><a href="#" class="button">Find out more</a></li>
 										</ul>
 									</footer>
-								</section>
+								</section> -->
 							</div>
 							<div class="col-4 col-6-medium col-12-small">
 								<section>
@@ -366,9 +396,9 @@
 										<h2>Find me here</h2>
 									</header>
 									<ul class="social">
-										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-										<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+										<li><a class="icon brands fa-github" href="https://github.com/Prince-sakariya" target="_blank"><span class="label">Github</span></a></li>
+										<li><a class="icon brands fa-twitter" href="#" target="_blank"><span class="label">Twitter</span></a></li>
+										<li><a class="icon brands fa-linkedin-in" href="#" target="_blank"><span class="label">LinkedIn</span></a></li>
 									</ul>
 									<ul class="contact">
 										<li>
@@ -379,12 +409,8 @@
 											</p>
 										</li>
 										<li>
-											<h3>Mail</h3>
-											<p><a href="#">prince.sakariya@study.thws.de</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
+											<h3>Email</h3>
+											<p><a href="mailto:prince.sakariya@study.thws.de" target="_blank">prince.sakariya@study.thws.de</a></p>
 										</li>
 									</ul>
 								</section>
@@ -394,7 +420,8 @@
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>&copy; Copyright & Stuff 2025.</li>
+											<li>View on: <a href="https://github.com/Prince-sakariya" target="_blank">Github</a></li>
 										</ul>
 									</div>
 

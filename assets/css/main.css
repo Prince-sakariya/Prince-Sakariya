@@ -174,7 +174,7 @@ html {
 
 body {
 	background: #252122;
-	background-image: url("images/bg02.png");
+	background-image: url("images/bg.png");
 }
 
 body.is-preload *,
@@ -1697,6 +1697,24 @@ footer {
 	margin: -4.5em 0 4.25em -3.5em;
 }
 
+
+.box .video.featured {
+	width: auto;
+	/* height: 279px; */
+	overflow: hidden;
+	display: block;
+	position: relative;
+	left: 1.75em;
+	top: 1.75em;
+	margin: -4.5em 0 4.25em -3.5em;
+}
+
+.box .video.featured video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .box.post header {
 	padding-top: 1em;
 	margin: 0 0 2em 0;
@@ -1831,6 +1849,42 @@ button.large,
 }
 
 .image.left {
+	float: left;
+	margin: 0 2em 2em 0;
+}
+
+.image.display_photo {
+	margin: 0 0 0 0;
+	width: 20em
+}
+
+.video {
+	display: inline-block;
+	outline: 0;
+}
+
+.video video {
+	display: block;
+	width: 100%;
+}
+
+.video.centered {
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.video.centered video {
+	margin: 0 auto;
+	width: auto;
+}
+
+.video.featured {
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+.video.left {
 	float: left;
 	margin: 0 2em 2em 0;
 }
@@ -2183,7 +2237,7 @@ ul.social li a.fa-google-plus:hover {
 	position: relative;
 	background: #ffffff;
 	border-bottom: solid 1px #ccc;
-	padding: 5em 0 4em 0;
+	padding: 4em 0 4em 0;
 	text-align: center;
 }
 
@@ -2299,7 +2353,7 @@ ul.social li a.fa-google-plus:hover {
 	background-repeat: no-repeat;
 	text-align: center;
 	position: relative;
-	padding: 8em 0;
+	padding: 4em 0;
 	margin: 4em 0 0 0;
 }
 
@@ -2314,6 +2368,7 @@ ul.social li a.fa-google-plus:hover {
 	color: #fff;
 	font-weight: 700;
 	font-size: 2.5em;
+	/* margin: 0 0 0.65em 0; */
 	margin: 0 0 0.65em 0;
 }
 
@@ -2323,6 +2378,17 @@ ul.social li a.fa-google-plus:hover {
 	font-style: normal;
 	margin: 0;
 	font-size: 1.5em;
+}
+
+#banner .header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#banner .header-content div {
+	width: 55em;
+	margin: 0 100px 0 0;
 }
 
 /* Intro */
@@ -2387,7 +2453,7 @@ ul.social li a.fa-google-plus:hover {
 
 #main {
 	position: relative;
-	background: #f7f7f7 url("images/bg02.png");
+	background: #f7f7f7 url("images/bg.png");
 	padding: 4em 0 4em 0;
 }
 
@@ -2397,14 +2463,14 @@ ul.social li a.fa-google-plus:hover {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: url("images/bg01.png");
+	background: url("images/bg.png");
 	background-size: 100% 100%;
 	z-index: 0;
 	opacity: 0.1;
 }
 
 #main .major h2 {
-	background: #f7f7f7 url("images/bg02.png");
+	background: #f7f7f7 url("images/bg.png");
 }
 
 /* Footer */
@@ -2421,7 +2487,7 @@ ul.social li a.fa-google-plus:hover {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: url("images/bg01.png");
+	background: url("images/bg.png");
 	background-size: 100% 100%;
 	z-index: 0;
 	opacity: 0.5;
@@ -2621,10 +2687,34 @@ ul.social li a.fa-google-plus:hover {
 	}
 
 	/* Header */
-
 	#header {
-		padding: 3.5em 0 3em 0;
+		padding: 2.5em 0 0em 0;
 	}
+
+	/* Banner */
+	#banner {
+		padding: 0 0;
+		margin: 4em 0 0 0;
+	}
+
+	#banner .header-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+
+	#banner .header-content div {
+		width: 35em;
+		margin: 0 35px 0 0;
+	}
+
+	#banner .image.display_photo {
+		margin: 0 0 0 0;
+		width: 20em;
+		clip-path: circle(42%)
+	}
+
 
 	/* Nav */
 
@@ -2773,7 +2863,7 @@ ul.social li a.fa-google-plus:hover {
 		width: 275px;
 		z-index: 10002;
 		color: #858484;
-		background-image: url("images/bg02.png");
+		background-image: url("images/bg.png");
 		box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 	}
 
@@ -2918,6 +3008,12 @@ ul.social li a.fa-google-plus:hover {
 		margin: -40px 0 40px -30px;
 	}
 
+	.box .video.featured {
+		left: 15px;
+		top: 15px;
+		margin: -40px 0 40px -30px;
+	}
+
 	.box.post header {
 		padding-top: 0;
 		margin: 0 0 1em 0;
@@ -3023,7 +3119,7 @@ ul.social li a.fa-google-plus:hover {
 	/* Banner */
 
 	#banner {
-		padding: 6em 0;
+		padding: 1em 0;
 		margin: 2em 0 0 0;
 	}
 
@@ -3037,6 +3133,24 @@ ul.social li a.fa-google-plus:hover {
 		font-size: 1.5em;
 		line-height: 1.5em;
 		margin: 0 0 0.25em 0;
+	}
+
+	#banner .header-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+
+	#banner .header-content div {
+		width: 30em;
+		margin: 0 0px 0 0;
+	}
+
+	#banner .image.display_photo {
+		margin: 0 0 0 0;
+		width: 20em;
+		clip-path: circle(42%)
 	}
 
 	#banner header p {
