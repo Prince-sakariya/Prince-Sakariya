@@ -1,0 +1,33 @@
+{
+    "Thermal-Impedance-analyzer": {
+      "title": "Reliability Engineering in Braking Systems",
+      "description": "This is the first project.",
+      "image": "/assets/images/esp.gif"
+    },
+    "project2": {
+      "title": "Social Navigation using Deep Reinforcement Learning",
+      "description": "This is the second project.",
+      "image": "/assets/images/social_navigation.webp"
+    },
+    "project3": {
+      "title": "Electric Vehicles Range Prediction",
+      "description": "This is the third project.",
+      "video": "/assets/videos/supervise_learning.mp4"
+    },
+    "project4": {
+      "title": "Mini-PLC using OpenPLC",
+      "description": "This is the fourth project.",
+      "video": "/assets/videos/MiniPLC.mp4"
+    },
+    "project5": {
+      "title": "Package Sorting using Siemens PLC",
+      "description": "This is the fifth project.",
+      "video": "/assets/videos/Transportmodell.mp4"
+    },
+    "project6": {
+      "title": "Human-Machine Interaction <br>& Connected Mobility",
+      "description": "This is the sixth project.",
+      "image": "/assets/images/connected-mobility.gif"
+    }
+  }
+  
