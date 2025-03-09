@@ -1747,7 +1747,7 @@ button,
 	cursor: pointer;
 	border: 0;
 	border-radius: 5px;
-	background: #d52349;
+	background: #23d5c8;
 	color: #fff !important;
 	font-weight: 700;
 	outline: 0;
@@ -1765,7 +1765,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-	background: #e53359;
+	background: #18a59c;
 }
 
 input[type="button"]:active,
@@ -1773,7 +1773,7 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 button:active,
 .button:active {
-	background: #c51349;
+	background: #23d5c8;
 }
 
 input[type="button"].alt,
@@ -2184,7 +2184,7 @@ ul.social li a.fa-google-plus:hover {
 .icon.featured {
 	position: relative;
 	display: inline-block;
-	background-color: #d52349;
+	background-color: #23d5c8;
 	width: 9em;
 	padding: 1.75em 0 0.75em 0;
 	border-top-left-radius: 5px;
@@ -2204,7 +2204,7 @@ ul.social li a.fa-google-plus:hover {
 	position: absolute;
 	bottom: -1.95em;
 	left: 0;
-	border-top: solid 2em #d52349;
+	border-top: solid 2em #23d5c8;
 	border-left: solid 4.5em transparent;
 	border-right: solid 4.5em transparent;
 }
@@ -2283,11 +2283,12 @@ ul.social li a.fa-google-plus:hover {
 
 #nav>ul>li:hover>a,
 #nav>ul>li.active>a {
-	background: #f3f3f3;
+	background: #18a59c;
+	color: white
 }
 
 #nav>ul>li.current>a {
-	background: #d52349;
+	background: #23d5c8;
 	color: #fff !important;
 	font-weight: 700;
 }
@@ -2373,7 +2374,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 #banner header p {
-	color: #d52349;
+	color: #23d5c8;
 	padding: 0;
 	font-style: normal;
 	margin: 0;
