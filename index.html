@@ -9,9 +9,7 @@
 	<title>Prince Sakariya - Mechatronics Engineer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/basic.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/responsive_style.css" />
 	<!-- Load library from the CDN -->
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
@@ -24,46 +22,16 @@
 		<section id="header">
 
 			<!-- Logo -->
-			<h1><a href="index.html">Who Am I?</a></h1>
+			<!-- <h1><a href="index.html">Who Am I?</a></h1> -->
 
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<!-- <li>
-						<a href="#">Dropdown</a>
-						<ul>
-							<li><a href="#">Lorem ipsum dolor</a></li>
-							<li><a href="#">Magna phasellus</a></li>
-							<li><a href="#">Etiam dolore nisl</a></li>
-							<li>
-								<a href="#">Phasellus consequat</a>
-								<ul>
-									<li><a href="#">Magna phasellus</a></li>
-									<li><a href="#">Etiam dolore nisl</a></li>
-									<li><a href="#">Veroeros feugiat</a></li>
-									<li><a href="#">Nisl sed aliquam</a></li>
-									<li><a href="#">Dolore adipiscing</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Veroeros feugiat</a></li>
-						</ul>
-					</li> -->
-					<li>
-						<a href="education.html">
-							Education
-						</a>
-					</li>
-					<li>
-						<a href="experience.html">
-							Experience
-						</a>
-					</li>
-					<li>
-						<a href="about.html">
-							About
-						</a>
-					</li>
+					<li class="current"><a href="index.html">About</a></li>
+					<li><a href="about.html">Skills</a></li>
+					<li><a href="experience.html">Work</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="education.html">Education</a></li>
 				</ul>
 			</nav>
 
@@ -108,6 +76,17 @@
 			<!-- Intro -->
 			<section id="intro" class="container">
 				<div class="row">
+					<div class="about">
+						<h1>About</h1>
+						<h2>Mechatronics Engineer with about 1 year of experience</h2>
+						<p>Driven and detail-oriented Mechatronics Engineer with a solid foundation in mechanical,
+							electrical, and software systems. Experienced in designing, analyzing, and optimizing
+							automation solutions, embedded systems, and electromechanical devices. Proficient in
+							integrating sensors, actuators, and control systems to enhance system efficiency and
+							reliability. Adept at troubleshooting complex technical challenges, implementing process
+							improvements, and collaborating across multidisciplinary teams. Committed to innovation and
+							continuous learning in the rapidly evolving field of mechatronics.</p>
+					</div>
 					<div class="col-4 col-12-medium">
 						<section class="first">
 							<i class="icon solid featured fa-cog"></i>
@@ -143,7 +122,7 @@
 				</div>
 				<footer>
 					<ul class="actions">
-						<li><a href="#" class="button large">Get Started</a></li>
+						<li><a href="#" class="button large">Contact Me</a></li>
 						<li><a href="#" class="button alt large">Learn More</a></li>
 					</ul>
 				</footer>
@@ -153,7 +132,7 @@
 
 		<!-- Main -->
 		<section id="main">
-			<div class="container">
+			<div class="container" id="projects">
 				<div class="row">
 					<div class="col-12">
 
@@ -171,7 +150,7 @@
 											<h3>Thermal Impedance Analyzer</h3>
 										</header>
 										<p>Developed at Bosch, this app powers thermal impedance tracking for reliable
-											<u>braking systems</u>, blending mechatronics know-how with sleek code to
+											braking systems, blending mechatronics know-how with sleek code to
 											optimize
 											performance under heat stress.
 										</p>
@@ -205,36 +184,16 @@
 									<section class="box">
 										<a href="#" class="video featured">
 											<video autoplay loop muted>
-												<source src="assets/videos/supervised_learning.mp4 ">
-											</video>
-										</a>
-										<header>
-											<h3>EV Range Prediction</h3>
-										</header>
-										<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros
-											lorem
-											blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
-										</p>
-										<footer>
-											<ul class="actions">
-												<li><a href="#" class="button alt">Find out more</a></li>
-											</ul>
-										</footer>
-									</section>
-								</div>
-								<div class="col-4 col-6-medium col-12-small">
-									<section class="box">
-										<a href="#" class="video featured">
-											<video autoplay loop muted>
 												<source src="assets/videos/MiniPLC.mp4">
 											</video>
 										</a>
 										<header>
 											<h3>Mini-PLC</h3>
 										</header>
-										<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros
-											lorem
-											blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+										<p>As lead, I spearheaded a team to craft a MiniPLC from scratch—blending
+											Arduino, OpenPLC,
+											and custom electronics into a slick enclosure for compact, real-world
+											control.
 										</p>
 										<footer>
 											<ul class="actions">
@@ -254,8 +213,9 @@
 											<h3>Package Sorting Siemens PLC</h3>
 										</header>
 										<p>Programmed a Siemens S7300 PLC to orchestrate a conveyor belt symphony,
-											automating
-											package sorting with relentless efficiency and mechatronics precision.</p>
+											automating package sorting with steady efficiency, mechatronics precision,
+											and reliable system integration.
+										</p>
 										<footer>
 											<ul class="actions">
 												<li><a href="#" class="button alt">Find out more</a></li>
@@ -268,11 +228,32 @@
 										<a href="#" class="image featured"><img
 												src="assets/images/connected-mobility.gif" /></a>
 										<header>
-											<h3>HMI and Connected Mobility</h3>
+											<h3>HMI & Automated Mobility</h3>
 										</header>
-										<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros
-											lorem
-											blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.
+										<p>Built a Raspberry Pi-powered HMI for image
+											classification, weaving user-centered prototypes and sensor data into a
+											slick NodeRED dashboard for seamless mobility insights.
+										</p>
+										<footer>
+											<ul class="actions">
+												<li><a href="#" class="button alt">Find out more</a></li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="video featured">
+											<video autoplay loop muted>
+												<source src="assets/videos/supervised_learning.mp4 ">
+											</video>
+										</a>
+										<header>
+											<h3>EV Range Prediction</h3>
+										</header>
+										<p>Using supervised learning, I applied concepts of linear and logistic
+											regression for electric vehicle pricing—delivering a model that predicts
+											costs with accuracy for a greener, smarter future.
 										</p>
 										<footer>
 											<ul class="actions">
