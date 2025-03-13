@@ -173,7 +173,7 @@ html {
 }
 
 body {
-	background: #252122;
+	background: black;
 	background-image: url("images/bg.png");
 }
 
@@ -196,14 +196,14 @@ textarea,
 select {
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
-	color: #5d5d5d;
+	color: white;
 	font-size: 14pt;
 	line-height: 1.75em;
 }
 
 strong,
 b {
-	color: #252122;
+	color: white;
 	font-weight: 400;
 }
 
@@ -230,32 +230,34 @@ blockquote {
 	font-style: italic;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: #252122;
+h1 {
+	font-size: 4em;
 	font-weight: 700;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-	color: inherit;
-	text-decoration: none;
+	padding: 25px 0;
+    /* Adding text glow effect with gradient */
+    text-shadow: 0 0 10px rgba(35, 213, 200, 0.5),
+                 0 0 20px rgba(35, 213, 200, 0.4),
+                 0 0 30px rgba(35, 213, 200, 0.3),
+                 0 0 40px rgba(35, 213, 200, 0.2);
+    /* Adding gradient color to text */
+    background: linear-gradient(to right, #23d5c8, #59e6dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 2.5em;
+	font-weight: 300;
+	margin-bottom: 0.75rem;
 }
 
 h3 {
-	font-size: 1.35em;
+	font-size: 1.75em;
+}
+
+p{
+	font-size: 1.25em
 }
 
 a {
@@ -1637,10 +1639,10 @@ table thead {
 
 /* Section/Article */
 
-section,
+/* section,
 article {
 	margin-bottom: 2.5em;
-}
+} */
 
 section> :last-child,
 section:last-child,
@@ -1684,7 +1686,7 @@ footer {
 /* Box */
 
 .box {
-	background: #ffffff;
+	background: rgba(34, 30, 31, 0.98);
 	border-bottom: solid 1px #ccc;
 	padding: 2.75em 1.75em 2.75em 1.75em;
 }
@@ -1720,10 +1722,10 @@ footer {
 	margin: 0 0 2em 0;
 }
 
-.box.post h2 {
+/* .box.post h2 {
 	font-size: 2.5em;
 	letter-spacing: -0.015em;
-}
+} */
 
 .box.post header>p {
 	margin-top: 1.25em;
@@ -1746,9 +1748,9 @@ button,
 	text-decoration: none;
 	cursor: pointer;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 10px;
 	background: #23d5c8;
-	color: #fff !important;
+	color: rgba(34, 30, 31, 0.98) !important;
 	font-weight: 700;
 	outline: 0;
 	font-size: 1.1em;
@@ -1782,6 +1784,8 @@ input[type="reset"].alt,
 button.alt,
 .button.alt {
 	background: #252122;
+	color: #23d5c8 !important;
+	border: 3px solid #23d5c8 !important;
 }
 
 input[type="button"].alt:hover,
@@ -2235,24 +2239,33 @@ ul.social li a.fa-google-plus:hover {
 
 #header {
 	position: relative;
-	background: #ffffff;
+	background: black;
 	border-bottom: solid 1px #ccc;
-	padding: 4em 0 4em 0;
+	/* padding: 4em 0 4em 0; */
 	text-align: center;
 }
 
-#header h1 {
-	color: #252122;
+/* #header h1 {
+	color: white;
 	font-weight: 900;
 	font-size: 2.5em;
 	letter-spacing: -0.035em;
 	line-height: 1;
-}
+} */
 
 /* Nav */
 
 #nav {
-	margin: 2.5em 0 0 0;
+	/* margin: 2.5em 0 0 0; */
+	padding: 1em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(56, 55, 55, 0.2);
 }
 
 #nav>ul {
@@ -2271,7 +2284,7 @@ ul.social li a.fa-google-plus:hover {
 
 #nav>ul>li>a {
 	border-radius: 5px;
-	color: #5d5d5d;
+	color: white;
 	text-decoration: none;
 	padding: 0.6em 1.2em 0.6em 1.2em;
 	-moz-transition: background-color .25s ease-in-out;
@@ -2293,7 +2306,7 @@ ul.social li a.fa-google-plus:hover {
 	font-weight: 700;
 }
 
-.dropotron {
+/* .dropotron {
 	border-radius: 5px;
 	background-color: #252122;
 	background-color: rgba(34, 30, 31, 0.98);
@@ -2341,7 +2354,7 @@ ul.social li a.fa-google-plus:hover {
 	border-right: solid 10px transparent;
 	border-bottom: solid 10px #252122;
 	border-bottom-color: rgba(34, 30, 31, 0.98);
-}
+} */
 
 /* Banner */
 /* Here is the CSS for Banner (Howdy! My ...) */
@@ -2352,33 +2365,50 @@ ul.social li a.fa-google-plus:hover {
 	background-position: center center;
 	background-size: auto 100%;
 	background-repeat: no-repeat;
-	text-align: center;
+	text-align: left;
 	position: relative;
 	padding: 4em 0;
-	margin: 4em 0 0 0;
+	/* margin: 4em 0 0 0; */
 }
 
 #banner header {
-	background-color: rgba(34, 30, 31, 0.98);
+	/* background-color: rgba(34, 30, 31, 0.98); */
 	display: inline-block;
-	padding: 2.5em 5em;
+	padding: 2.5em 17em;
 	border-radius: 5px;
+}
+
+#banner header h1 {
+	font-size: 5.0625rem;
+	letter-spacing: -.02em;
+	font-weight: 700;
+	margin: 0 0 0.40em 0;
+	/* Adding text glow effect with gradient */
+    text-shadow: 0 0 10px rgba(35, 213, 200, 0.5),
+                 0 0 20px rgba(35, 213, 200, 0.4),
+                 0 0 30px rgba(35, 213, 200, 0.3),
+                 0 0 40px rgba(35, 213, 200, 0.2);
+    /* Adding gradient color to text */
+    background: linear-gradient(to right, #23d5c8, #59e6dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 #banner header h2 {
 	color: #fff;
-	font-weight: 700;
-	font-size: 2.5em;
-	/* margin: 0 0 0.65em 0; */
-	margin: 0 0 0.65em 0;
+	margin: 0 0 0.40em 0;
+	font-size: 3.375rem;
+	letter-spacing: -.02em;
+	font-weight: 300;
 }
 
 #banner header p {
-	color: #23d5c8;
+	color: whitesmoke;
 	padding: 0;
 	font-style: normal;
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 #banner .header-content {
@@ -2388,36 +2418,33 @@ ul.social li a.fa-google-plus:hover {
 }
 
 #banner .header-content div {
-	width: 55em;
-	margin: 0 100px 0 0;
+	width: 40em;
+	/* margin: 0 100px 0 0; */
 }
 
-/* Intro */
-/* Here is the CSS for the Introduction (Problem  Solver...)*/
-#intro {
+#banner .actions {
+	margin: 28px 0 0 0;
+}
+
+/* about */
+/* Here is the CSS for the about (Problem  Solver...)*/
+#about {
 	text-align: center;
 	overflow: hidden;
+	padding: 4em 0 4em 0;
 }
 
-#intro section {
-	margin: 3em 0;
-	padding: 2.5em 0;
+#about div.header{
+	text-align: left
 }
 
-#intro h2 {
-	font-size: 1.75em;
-}
 
-#intro p {
-	margin: 0;
-}
-
-#intro .middle {
+#about .middle {
 	position: relative;
 	z-index: 1;
 }
 
-#intro .middle:before {
+#about .middle:before {
 	content: '';
 	width: 32px;
 	height: 100%;
@@ -2426,10 +2453,10 @@ ul.social li a.fa-google-plus:hover {
 	top: 0;
 	display: block;
 	z-index: -1;
-	box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+	/* box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15); */
 }
 
-#intro .middle:after {
+#about .middle:after {
 	content: '';
 	width: 32px;
 	height: 100%;
@@ -2438,51 +2465,259 @@ ul.social li a.fa-google-plus:hover {
 	top: 0;
 	display: block;
 	z-index: -1;
-	box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+	/* box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15); */
 }
 
-#intro .button {
+#about .button {
 	min-width: 12em;
 }
 
-#intro footer {
-	margin: 0;
-}
 
-/* Main */
+/* projects */
 /* Here is the CSS for My Projects section */
 
-#main {
+#projects {
 	position: relative;
-	background: #f7f7f7 url("images/bg.png");
-	padding: 4em 0 4em 0;
+	background: black;
+	padding: 4.5em 0 4em 0;
 }
 
-#main:before {
+#projects div.header{
+	text-align: left
+}
+
+
+#projects:before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: url("images/bg.png");
+	/* background: url("images/bg.png"); */
 	background-size: 100% 100%;
 	z-index: 0;
 	opacity: 0.1;
 }
 
-#main .major h2 {
-	background: #f7f7f7 url("images/bg.png");
+/* Project Carousel Styles */
+.carousel-container {
+	position: relative;
+	width: 100%;
+	padding: 40px 0; /* Reduced padding */
+	overflow: hidden;
+  }
+  
+  /* Projects Wrapper */
+  .projects-wrapper {
+	display: flex;
+	transition: transform 0.5s ease;
+	width: 100%;
+	cursor: grab; /* Indicates it's draggable */
+  }
+  
+  .projects-wrapper:active {
+	cursor: grabbing; /* Changes cursor when dragging */
+  }
+  
+  /* Project Box */
+  .project-box {
+	min-width: calc(50% - 30px); /* Slightly reduced width */
+	margin: 0 15px;
+	background: rgba(34, 30, 31, 0.98);
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	flex-shrink: 1;
+	max-height: 450px; /* Maximum height to prevent excessive size */
+	display: flex;
+	flex-direction: column;
+  }
+  
+  /* Featured media (image/video) */
+  .featured-media {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 200px; /* Fixed height for media */
+	overflow: hidden;
+	background-color: #eee;
+  }
+  
+  .featured-media img, 
+  .featured-media video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  /* Project Content */
+  .project-content {
+	padding: 20px;
+	overflow-y: auto; /* Allow scrolling for content if needed */
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .project-content h3 {
+	margin-bottom: 12px;
+	color: white;
+	font-weight: 600;
+  }
+  
+  .project-content p {
+	color: white;
+	line-height: 1.5;
+	font-size: 0.95rem;
+	margin-bottom: 0; /* Remove bottom margin */
+  }
+  
+  /* Navigation Buttons */
+  .nav-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 44px;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+	background: rgba(255, 255, 255, 1);
+  }
+  
+  .nav-button.prev {
+	left: 10px;
+  }
+  
+  .nav-button.next {
+	right: 10px;
+  }
+  
+  /* Navigation Button Arrows */
+  .nav-button:before {
+	content: '';
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid #333;
+	border-right: 2px solid #333;
+  }
+  
+  .nav-button.prev:before {
+	transform: rotate(-135deg);
+  }
+  
+  .nav-button.next:before {
+	transform: rotate(45deg);
+  }
+  
+  /* Navigation Dots */
+  .carousel-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  /* .dot.active {
+	background-color: #333;
+  }
+   */
+
+   .dot.active {
+	background-color: #333;
+	/* Adding glow effect */
+	box-shadow: 0 0 5px rgba(35, 213, 200, 0.6),
+				0 0 10px rgba(35, 213, 200, 0.4),
+				0 0 15px rgba(35, 213, 200, 0.2);
+	/* Adding gradient */
+	background: linear-gradient(to right, #23d5c8, #59e6dc);
+	/* Smooth transition for hover effects */
+	transition: all 0.3s ease;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+	.project-box {
+	  min-width: calc(100% - 30px);
+	}
+  }
+
+/* about */
+/* Here is the CSS for the about (Problem  Solver...)*/
+#education {
+	text-align: center;
+	overflow: hidden;
+	padding: 4em 0 4em 0;
 }
+
+#education div.header{
+	text-align: left
+}
+
+
+#education .middle {
+	position: relative;
+	z-index: 1;
+}
+
+#education .middle:before {
+	content: '';
+	width: 32px;
+	height: 100%;
+	position: absolute;
+	left: -24px;
+	top: 0;
+	display: block;
+	z-index: -1;
+	/* box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15); */
+}
+
+#education .middle:after {
+	content: '';
+	width: 32px;
+	height: 100%;
+	position: absolute;
+	right: -24px;
+	top: 0;
+	display: block;
+	z-index: -1;
+	/* box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15); */
+}
+
+#education .button {
+	min-width: 12em;
+}
+
 
 /* Footer */
 
-#footer {
+#contact {
 	position: relative;
 	color: #858484;
 	padding: 4em 0;
 }
 
-#footer:before {
+#contact:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -2494,42 +2729,42 @@ ul.social li a.fa-google-plus:hover {
 	opacity: 0.5;
 }
 
-#footer a {
+#contact a {
 	color: #c5c4c4;
 }
 
-#footer h2,
-#footer h3,
-#footer h4,
-#footer h5,
-#footer h6,
-#footer strong,
-#footer b {
+#contact h2,
+#contact h3,
+#contact h4,
+#contact h5,
+#contact h6,
+#contact strong,
+#contact b {
 	color: #fff;
 }
 
-#footer h2 a,
-#footer h3 a,
-#footer h4 a,
-#footer h5 a,
-#footer h6 a,
-#footer strong a,
-#footer b a {
+#contact h2 a,
+#contact h3 a,
+#contact h4 a,
+#contact h5 a,
+#contact h6 a,
+#contact strong a,
+#contact b a {
 	color: inherit;
 }
 
-#footer ul.contact li,
-#footer ul.dates li,
-#footer ul.divided li {
+#contact ul.contact li,
+#contact ul.dates li,
+#contact ul.divided li {
 	border-top-color: #353434;
 	border-top-color: rgba(255, 255, 255, 0.05);
 }
 
-#footer header {
+#contact header {
 	margin: 0 0 3em 0;
 }
 
-#footer header h2 {
+#contact header h2 {
 	font-size: 1.75em;
 }
 
@@ -2606,45 +2841,45 @@ ul.social li a.fa-google-plus:hover {
 		margin: 3em 0 0 0;
 	}
 
-	/* Intro */
+	/* about */
 
-	#intro {
+	#about {
 		padding: 0;
 	}
 
-	#intro section {
+	#about section {
 		padding: 1em 2em;
 	}
 
-	#intro .middle:before {
+	#about .middle:before {
 		left: -12px;
 	}
 
-	#intro .middle:after {
+	#about .middle:after {
 		right: -12px;
 	}
 
-	/* Main */
+	/* projects */
 
-	#main {
+	#projects {
 		padding: 30px 0;
 	}
 
 	/* Footer */
 
-	#footer {
+	#contact {
 		padding: 3em 0;
 	}
 
-	#footer:before {
+	#contact:before {
 		height: 2.5em;
 	}
 
-	#footer header {
+	#contact header {
 		margin: 0 0 1.5em 0;
 	}
 
-	#footer header h2 {
+	#contact header h2 {
 		font-size: 1.25em;
 	}
 
@@ -2723,44 +2958,44 @@ ul.social li a.fa-google-plus:hover {
 		display: none;
 	}
 
-	/* Intro */
+	/* about */
 
-	#intro {
+	#about {
 		padding: 3em 0 0 0;
 	}
 
-	#intro section {
+	#about section {
 		position: relative;
 		border-top: solid 1px #dfdfdf;
 		margin: 0;
 		padding: 40px 0 0 0;
 	}
 
-	#intro section.first {
+	#about section.first {
 		border-top: 0;
 		padding-top: 0;
 	}
 
-	#intro section p {
+	#about section p {
 		margin: 0;
 	}
 
-	#intro .middle:before,
-	#intro .middle:after {
+	#about .middle:before,
+	#about .middle:after {
 		display: none;
 	}
 
-	#intro footer {
+	#about footer {
 		padding: 3em 0 0 0;
 	}
 
-	#intro footer ul.actions {
+	#about footer ul.actions {
 		margin-bottom: 0;
 	}
 
-	/* Main */
+	/* projects */
 
-	#main {
+	#projects {
 		padding: 40px 0;
 	}
 
@@ -3102,18 +3337,18 @@ ul.social li a.fa-google-plus:hover {
 		letter-spacing: -0.035em;
 	}
 
-	/* Intro */
+	/* about */
 
-	#intro {
+	#about {
 		padding: 2em 0 0 0;
 	}
 
-	#intro section {
+	#about section {
 		padding: 40px 0 0 0;
 		margin: 20px 0 0 0;
 	}
 
-	#intro h2 {
+	#about h2 {
 		font-size: 1.25em;
 	}
 
@@ -3128,6 +3363,12 @@ ul.social li a.fa-google-plus:hover {
 		padding: 1.5em 1em 1.5em 1em;
 		display: block;
 		border-radius: 0;
+	}
+
+	#banner header h1 {
+		font-size: 3em;
+		line-height: 1.5em;
+		margin: 0 0 0.25em 0;
 	}
 
 	#banner header h2 {
@@ -3158,15 +3399,15 @@ ul.social li a.fa-google-plus:hover {
 		font-size: 1.2em;
 	}
 
-	/* Main */
+	/* projects */
 
-	#main {
+	#projects {
 		padding: 20px 0;
 	}
 
 	/* Footer */
 
-	#footer {
+	#contact {
 		padding: 40px 0 20px 0;
 	}
 
