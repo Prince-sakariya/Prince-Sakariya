@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     async function loadProjectData() {
         try {
             // Fetch the data from the JSON file
-            const response = await fetch('./assets/data/projects.json');
+            const response = await fetch('../../assets/data/projects.json');
             const projects = await response.json(); // Parse the JSON
 
             // Get the project ID from the URL
