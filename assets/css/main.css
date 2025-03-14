@@ -244,16 +244,19 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+	margin-bottom: 0.40em;
 }
 
 h2 {
 	font-size: 2.5em;
 	font-weight: 300;
-	margin-bottom: 0.75rem;
+	margin-bottom: 0.40em;
+	line-height: 45px;
 }
 
 h3 {
 	font-size: 1.75em;
+	line-height: 39px;
 }
 
 p{
@@ -1688,7 +1691,9 @@ footer {
 .box {
 	background: rgba(34, 30, 31, 0.98);
 	border-bottom: solid 1px #ccc;
-	padding: 2.75em 1.75em 2.75em 1.75em;
+	padding: 1.75em 1.75em 2.75em 1.75em;
+	margin: 4em;
+	border-radius: 20px;
 }
 
 .box .image.featured {
@@ -2193,7 +2198,7 @@ ul.social li a.fa-google-plus:hover {
 	padding: 1.75em 0 0.75em 0;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	margin: 0 0 4.5em 0;
+	margin: 0 0 3em 0;
 	cursor: default;
 }
 
@@ -2239,9 +2244,7 @@ ul.social li a.fa-google-plus:hover {
 
 #header {
 	position: relative;
-	background: black;
-	border-bottom: solid 1px #ccc;
-	/* padding: 4em 0 4em 0; */
+	background: transparent;
 	text-align: center;
 }
 
@@ -2305,56 +2308,6 @@ ul.social li a.fa-google-plus:hover {
 	color: #fff !important;
 	font-weight: 700;
 }
-
-/* .dropotron {
-	border-radius: 5px;
-	background-color: #252122;
-	background-color: rgba(34, 30, 31, 0.98);
-	padding: 1.25em 1.5em 1.25em 1.5em;
-	font-style: italic;
-	min-width: 13em;
-	box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
-	text-align: left;
-	margin-top: -1.25em;
-	margin-left: -1px;
-	list-style: none;
-}
-
-.dropotron a,
-.dropotron span {
-	color: #aaa;
-	text-decoration: none;
-	-moz-transition: color .25s ease-in-out;
-	-webkit-transition: color .25s ease-in-out;
-	-ms-transition: color .25s ease-in-out;
-	transition: color .25s ease-in-out;
-}
-
-.dropotron li {
-	padding: 0.25em 0 0.25em 0;
-}
-
-.dropotron li:hover>a,
-.dropotron li:hover>span {
-	color: #fff;
-}
-
-.dropotron.level-0 {
-	margin-top: 2em;
-}
-
-.dropotron.level-0:before {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 50%;
-	margin-left: -10px;
-	top: -9px;
-	border-left: solid 10px transparent;
-	border-right: solid 10px transparent;
-	border-bottom: solid 10px #252122;
-	border-bottom-color: rgba(34, 30, 31, 0.98);
-} */
 
 /* Banner */
 /* Here is the CSS for Banner (Howdy! My ...) */
@@ -2472,13 +2425,88 @@ ul.social li a.fa-google-plus:hover {
 	min-width: 12em;
 }
 
+/* quote */
+
+.quote {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.2;
+}
+
+:root {
+  --glow-color: hsl(186 100% 69%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.glowing-txt {
+  text-shadow: 0 0 0.125em hsla(185, 100%, 49%, 0.3), 0 0 0.45em var(--glow-color);
+}
+
+.faulty-word {
+	opacity: 0.5;
+	animation: faulty-flicker 1s linear infinite;
+}
+
+.important-word{
+	font-weight: 200;
+	color:#23d5c8;
+	opacity:1.5;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+	.quote{
+    font-size: 1em;
+  }
+}
 
 /* projects */
 /* Here is the CSS for My Projects section */
 
 #projects {
 	position: relative;
-	background: black;
+	background: transparent;
 	padding: 4.5em 0 4em 0;
 }
 
@@ -2499,38 +2527,33 @@ ul.social li a.fa-google-plus:hover {
 	opacity: 0.1;
 }
 
-/* Project Carousel Styles */
-.carousel-container {
-	position: relative;
-	width: 100%;
-	padding: 40px 0; /* Reduced padding */
-	overflow: hidden;
-  }
-  
-  /* Projects Wrapper */
-  .projects-wrapper {
+/* Projects Wrapper */
+.projects-wrapper {
 	display: flex;
 	transition: transform 0.5s ease;
 	width: 100%;
-	cursor: grab; /* Indicates it's draggable */
   }
   
-  .projects-wrapper:active {
-	cursor: grabbing; /* Changes cursor when dragging */
+  /* Carousel Container */
+  .carousel-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden; 
   }
   
   /* Project Box */
   .project-box {
-	min-width: calc(50% - 30px); /* Slightly reduced width */
+	min-width: calc(50% - 30px);
+	height: auto;
 	margin: 0 15px;
 	background: rgba(34, 30, 31, 0.98);
 	border-radius: 8px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 	overflow: hidden;
-	flex-shrink: 1;
-	max-height: 450px; /* Maximum height to prevent excessive size */
+	/* flex-shrink: 0; */
 	display: flex;
 	flex-direction: column;
+	transition: all 0.3s ease;
   }
   
   /* Featured media (image/video) */
@@ -2538,12 +2561,12 @@ ul.social li a.fa-google-plus:hover {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 200px; /* Fixed height for media */
+	height: 260px; /* Default height for media */
 	overflow: hidden;
 	background-color: #eee;
   }
   
-  .featured-media img, 
+  .featured-media img,
   .featured-media video {
 	width: 100%;
 	height: 100%;
@@ -2553,7 +2576,7 @@ ul.social li a.fa-google-plus:hover {
   /* Project Content */
   .project-content {
 	padding: 20px;
-	overflow-y: auto; /* Allow scrolling for content if needed */
+	overflow-y: auto;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
@@ -2563,13 +2586,14 @@ ul.social li a.fa-google-plus:hover {
 	margin-bottom: 12px;
 	color: white;
 	font-weight: 600;
+	font-size: 1.5rem;
   }
   
   .project-content p {
 	color: white;
 	line-height: 1.5;
 	font-size: 0.95rem;
-	margin-bottom: 0; /* Remove bottom margin */
+	margin-bottom: 0;
   }
   
   /* Navigation Buttons */
@@ -2638,12 +2662,7 @@ ul.social li a.fa-google-plus:hover {
 	transition: background-color 0.3s ease;
   }
   
-  /* .dot.active {
-	background-color: #333;
-  }
-   */
-
-   .dot.active {
+  .dot.active {
 	background-color: #333;
 	/* Adding glow effect */
 	box-shadow: 0 0 5px rgba(35, 213, 200, 0.6),
@@ -2654,61 +2673,126 @@ ul.social li a.fa-google-plus:hover {
 	/* Smooth transition for hover effects */
 	transition: all 0.3s ease;
   }
-
-  /* Responsive adjustments */
-  @media (max-width: 992px) {
+  
+  /* Responsive settings - XLarge screens */
+  @media screen and (max-width: 1680px) {
 	.project-box {
-	  min-width: calc(100% - 30px);
+	  min-width: calc(33.333% - 30px);
+	}
+	
+	.featured-media {
+	  height: 240px;
+	}
+	
+	.project-content h3 {
+	  font-size: 1.4rem;
 	}
   }
-
-/* about */
-/* Here is the CSS for the about (Problem  Solver...)*/
-#education {
-	text-align: center;
-	overflow: hidden;
-	padding: 4em 0 4em 0;
-}
-
-#education div.header{
-	text-align: left
-}
-
-
-#education .middle {
-	position: relative;
-	z-index: 1;
-}
-
-#education .middle:before {
-	content: '';
-	width: 32px;
-	height: 100%;
-	position: absolute;
-	left: -24px;
-	top: 0;
-	display: block;
-	z-index: -1;
-	/* box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15); */
-}
-
-#education .middle:after {
-	content: '';
-	width: 32px;
-	height: 100%;
-	position: absolute;
-	right: -24px;
-	top: 0;
-	display: block;
-	z-index: -1;
-	/* box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15); */
-}
-
-#education .button {
-	min-width: 12em;
-}
-
-
+  
+  /* Responsive settings - Large screens */
+  @media screen and (max-width: 1280px) {
+	.project-box {
+	  min-width: calc(50% - 30px);
+	}
+	
+	.featured-media {
+	  height: 220px;
+	}
+	
+	.carousel-container {
+	  padding: 0 45px;
+	}
+  }
+  
+  /* Responsive settings - Medium screens */
+  @media screen and (max-width: 980px) {
+	.project-box {
+	  min-width: calc(100% - 30px);
+	  max-height: none;
+	}
+	
+	.featured-media {
+	  height: 200px;
+	}
+	
+	.project-content h3 {
+	  font-size: 1.3rem;
+	}
+	
+	.carousel-container {
+	  padding: 0 40px;
+	}
+	
+	.nav-button {
+	  width: 40px;
+	  height: 40px;
+	}
+  }
+  
+  /* Responsive settings - Small screens */
+  @media screen and (max-width: 736px) {
+	.project-box {
+	  margin: 0 10px;
+	  min-width: calc(100% - 20px);
+	}
+	
+	.featured-media {
+	  height: 180px;
+	}
+	
+	.project-content {
+	  padding: 15px;
+	}
+	
+	.project-content h3 {
+	  font-size: 1.2rem;
+	  margin-bottom: 8px;
+	}
+	
+	.project-content p {
+	  font-size: 0.9rem;
+	}
+	
+	.carousel-container {
+	  padding: 0 35px;
+	}
+	
+	.nav-button {
+	  width: 36px;
+	  height: 36px;
+	}
+	
+	.nav-button:before {
+	  width: 10px;
+	  height: 10px;
+	}
+	
+	.dot {
+	  width: 8px;
+	  height: 8px;
+	  margin: 0 4px;
+	}
+  }
+  
+  /* Extra small screens */
+  @media screen and (max-width: 480px) {
+	.carousel-container {
+	  padding: 0 30px;
+	}
+	
+	.featured-media {
+	  height: 160px;
+	}
+	
+	.nav-button {
+	  width: 32px;
+	  height: 32px;
+	}
+	
+	.project-content h3 {
+	  font-size: 1.1rem;
+	}
+  }
 /* Footer */
 
 #contact {
@@ -2739,8 +2823,9 @@ ul.social li a.fa-google-plus:hover {
 #contact h5,
 #contact h6,
 #contact strong,
-#contact b {
+#contact a {
 	color: #fff;
+	text-decoration: none;
 }
 
 #contact h2 a,
