@@ -1,6 +1,6 @@
 # Hi there! 👋 I'm Prince
 
-## 🎓 Mechatronics Student | 🤖 Automation Enthusiast | 🌐 IoT Developer
+## 🎓 Mechatronics Engineer | 🤖 Embedded Software and Industrial Automation | 🌐 Robotics and IoT enthusiast 
 
 Currently studying Mechatronics at THWS, passionate about creating innovative solutions in automation, IoT, and machine learning.
 
