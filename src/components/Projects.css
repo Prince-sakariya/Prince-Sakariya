@@ -1,0 +1,111 @@
+.practical-experience-section {
+  width: 100vw;
+  background: #fff;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #1a1a1a;
+}
+.practical-experience-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.practical-experience-project {
+  width: 100%;
+}
+.practical-experience-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  background: #f8f8f8;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.practical-experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.practical-experience-details h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.practical-experience-awards,
+.practical-experience-services,
+.practical-experience-about {
+  margin-bottom: 0.5rem;
+}
+.practical-experience-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.practical-experience-media img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+.practical-experience-media-caption {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+}
+.practical-experience-media-video video {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+}
+.practical-experience-media-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.practical-experience-media-grid img {
+  width: 100px;
+  height: 66px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+@media (max-width: 1100px) {
+  .practical-experience-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+  }
+}
+@media (max-width: 700px) {
+  .practical-experience-section {
+    padding: 2rem 0 1rem 0;
+  }
+  .practical-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .practical-experience-media img,
+  .practical-experience-media-video video {
+    max-width: 100%;
+  }
+  .practical-experience-media-grid {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .practical-experience-media-grid img {
+    width: 60px;
+    height: 40px;
+  }
+}
