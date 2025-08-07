@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Prince-Sakariya/static/css/main.f981d0d9.css",
+    "main.js": "/Prince-Sakariya/static/js/main.e5b0fd5d.js",
+    "static/js/453.7c8fb004.chunk.js": "/Prince-Sakariya/static/js/453.7c8fb004.chunk.js",
+    "index.html": "/Prince-Sakariya/index.html",
+    "main.f981d0d9.css.map": "/Prince-Sakariya/static/css/main.f981d0d9.css.map",
+    "main.e5b0fd5d.js.map": "/Prince-Sakariya/static/js/main.e5b0fd5d.js.map",
+    "453.7c8fb004.chunk.js.map": "/Prince-Sakariya/static/js/453.7c8fb004.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f981d0d9.css",
+    "static/js/main.e5b0fd5d.js"
+  ]
+}
